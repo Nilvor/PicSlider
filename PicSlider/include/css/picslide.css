@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: x_factor;
+    height: 100vh;
+    text-align: center;
+    background-color: #1c3049;
+    color: white;
+
+}
+ h1{
+     padding: 20px;
+ }
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pics{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 10px;
+    height: 80vh;
+    color: white;
+    cursor: pointer;
+    flex: 0.1;
+    margin: 5px;
+    position: relative;
+    transition: flex 1s ease-in ;
+}
+h3{
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+.activ{
+    flex:5;
+}
+.activ h3 {
+    opacity: 1;
+    transition-delay: 1s;
+}
+@media (max-width: 850px){
+
+ .pics:nth-of-type(4),
+ .pics:nth-of-type(5),
+ .pics:nth-of-type(6){
+     display:none;
+ }
+}
